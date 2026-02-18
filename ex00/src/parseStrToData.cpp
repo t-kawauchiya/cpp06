@@ -6,11 +6,14 @@
 /*   By: takawauc <takawauc@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/17 23:46:47 by takawauc          #+#    #+#             */
-/*   Updated: 2026/02/18 13:18:28 by takawauc         ###   ########.fr       */
+/*   Updated: 2026/02/18 15:46:13 by takawauc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScalarConverter.hpp"
+
+#include <cstdlib>
+#include <limits>
 
 bool isCharLiteral(const std::string& str);
 bool isIntLiteral(const std::string& str);

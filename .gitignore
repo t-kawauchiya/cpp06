@@ -1,0 +1,9 @@
+.clang-format
+en.subject.pdf
+compile_commands.json
+*.o
+.cache
+
+ex00/scalarComverter
+ex01/scalarComverter
+ex02/scalarComverter
