@@ -1,4 +1,4 @@
-NAME = comversion_of_scalar_type 
+NAME = scalarComverter
 
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic -Iinclude
@@ -8,9 +8,11 @@ SANFLAGS = -g -fsanitize=address -fsanitize=leak -fno-omit-frame-pointer
 
 SRC_DIR = src/
 OBJ_DIR = obj/
-SRC_FILES = main.cpp
+SRC_FILES = main.cpp ScalarComverter.cpp putLiterals.cpp parseStrToData.cpp
 SRC = $(addprefix $(SRC_DIR), $(SRC_FILES))
 OBJ = $(addprefix $(OBJ_DIR), $(SRC_FILES:.cpp=.o))
+
+TEST = ./test/test.sh
 
 all: $(NAME)
 
@@ -41,4 +43,7 @@ leak_check: debug
 	LSAN_OPTIONS=use_registers=0:report_objects=1 \
 	./$(NAME)
 
-.PHONY: all debug clean fclean re val leak_check
+test: debug
+	$(TEST)
+
+.PHONY: all debug clean fclean re val leak_check test
