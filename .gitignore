@@ -5,5 +5,5 @@ compile_commands.json
 .cache
 
 ex00/scalarComverter
-ex01/scalarComverter
-ex02/scalarComverter
+ex01/serialization 
+ex02/identify 

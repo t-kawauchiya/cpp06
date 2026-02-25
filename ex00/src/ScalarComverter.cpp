@@ -6,7 +6,7 @@
 /*   By: takawauc <takawauc@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/06 20:58:52 by takawauc          #+#    #+#             */
-/*   Updated: 2026/02/18 15:48:23 by takawauc         ###   ########.fr       */
+/*   Updated: 2026/02/25 16:37:37 by takawauc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ void printData(ScalarConverter::t_data data);
 
 void ScalarConverter::convert(const std::string& str) {
   t_data data = ScalarConverter::parseStrToData(str);
-  printData(data);
   ScalarConverter::putLiterals(data);
 }
 
