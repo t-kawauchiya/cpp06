@@ -6,7 +6,7 @@
 /*   By: takawauc <takawauc@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/17 23:51:19 by takawauc          #+#    #+#             */
-/*   Updated: 2026/02/18 16:45:05 by takawauc         ###   ########.fr       */
+/*   Updated: 2026/02/27 16:18:23 by takawauc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ void putCharLiteral(ScalarConverter::t_data data) {
   else if (std::isprint(val))
     std::cout << "'" << val << "'" << std::endl;
   else
-    std::cout << "Non displaiable" << std::endl;
+    std::cout << "Non displayable" << std::endl;
 }
 
 void putIntLiteral(ScalarConverter::t_data data) {
