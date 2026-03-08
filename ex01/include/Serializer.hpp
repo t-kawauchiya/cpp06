@@ -6,7 +6,7 @@
 /*   By: takawauc <takawauc@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/08 16:57:27 by takawauc          #+#    #+#             */
-/*   Updated: 2026/02/18 17:48:23 by takawauc         ###   ########.fr       */
+/*   Updated: 2026/03/08 16:08:21 by takawauc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ public:
   static Data* deserialize(uintptr_t raw);
 
 private:
+  Serializer();
 };
 
 #endif

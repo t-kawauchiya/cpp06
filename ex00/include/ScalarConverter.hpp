@@ -6,7 +6,7 @@
 /*   By: takawauc <takawauc@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/08 16:57:27 by takawauc          #+#    #+#             */
-/*   Updated: 2026/02/18 12:59:35 by takawauc         ###   ########.fr       */
+/*   Updated: 2026/03/08 16:07:14 by takawauc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ public:
   } t_data;
 
 private:
+  ScalarConverter();
   static ScalarConverter::t_data parseStrToData(const std::string& str);
   static void putLiterals(ScalarConverter::t_data data);
 };
